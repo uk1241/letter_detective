@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
                 (chap) => chap.chapterType == 'activity' && chap.title == 'Letter Detective',
                 orElse: () => gameData.data.chapter.first);
 
-            // LetterDetectiveGame is now wrapped in a BlocProvider internally
+            
             return LetterDetectiveGame(gameChapterData: chapterData);
           } else {
             return const Scaffold(

@@ -18,11 +18,11 @@ class LetterDetectiveGame extends StatefulWidget {
 
 class _LetterDetectiveGameState extends State<LetterDetectiveGame>
     with SingleTickerProviderStateMixin {
-  // Add AnimationController for tap animation
+  // AnimationController for tap animation
   late AnimationController _animationController;
   late Animation<double> _scaleAnimation;
 
-  // Track the letter that was just tapped to apply the animation
+  // Track the letter that was just tapped to apply animation
   String? _tappedLetterForAnimation;
 
   @override
@@ -204,7 +204,7 @@ class _LetterDetectiveGameState extends State<LetterDetectiveGame>
                     ),
                     const SizedBox(
                       height: 20,
-                    ), // Spacing below the custom app bar
+                    ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20.0),
                       child: Column(
@@ -228,18 +228,18 @@ class _LetterDetectiveGameState extends State<LetterDetectiveGame>
                             valueColor: const AlwaysStoppedAnimation<Color>(
                               Colors.white,
                             ),
-                            minHeight: 8, // Make the progress bar a bit thicker
+                            minHeight: 8,
                             borderRadius: BorderRadius.circular(
                               4,
                             ), // Rounded corners for progress bar
                           ),
-                          const SizedBox(height: 30), // Increased spacing
+                          const SizedBox(height: 30),
                           Center(
                             child: Text(
                               'Tap the letters you hear',
                               style: const TextStyle(
                                 color: Colors.white,
-                                fontSize: 26, // Slightly larger font
+                                fontSize: 26,
                                 fontWeight: FontWeight.bold,
                               ),
                               textAlign: TextAlign.center,
@@ -253,7 +253,7 @@ class _LetterDetectiveGameState extends State<LetterDetectiveGame>
                                   : '',
                               style: const TextStyle(
                                 color: Colors.white,
-                                fontSize: 20, // Slightly larger font
+                                fontSize: 20, 
                                 fontWeight: FontWeight.w500,
                               ),
                               textAlign: TextAlign.center,
@@ -262,13 +262,13 @@ class _LetterDetectiveGameState extends State<LetterDetectiveGame>
                         ],
                       ),
                     ),
-                    const SizedBox(height: 30), // Spacing before the grid
+                    const SizedBox(height: 30),
                     Expanded(
                       child: Container(
                         decoration: const BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(20.0), // Rounded top-left
+                            topLeft: Radius.circular(20.0),
                             topRight: Radius.circular(
                               40.0,
                             ), // Rounded top-right

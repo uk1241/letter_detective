@@ -108,7 +108,6 @@ class LetterDetectiveBloc extends Bloc<LetterDetectiveEvent, LetterDetectiveStat
   }
 
   void _onPromptAudioCompleted(PromptAudioCompleted event, Emitter<LetterDetectiveState> emit) {
-    // No specific state change needed here, just indicates audio finished
     // The game remains in GamePlaying state, waiting for user input.
   }
 
